@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "roboto";
+  src: url('./fonts/RobotoMono-Medium.ttf');
+}
+p, h1,h2, h3 a{
+  font-family: 'roboto';
+}
+
 .intro-section{
   padding: 30px 0;
 }
