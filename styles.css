@@ -1,6 +1,7 @@
 @font-face {
   font-family: "roboto";
   src: url('./fonts/RobotoMono-Medium.ttf');
+  font-display: swap;
 }
 p, h1,h2, h3 a{
   font-family: 'roboto';

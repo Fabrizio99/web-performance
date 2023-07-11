@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Performance</title>
     <link
+      rel="preload"
+      href="/fonts/RobotoMono-Medium.ttf"
+      as="font"
+      crossorigin
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <script src="performance.js"></script>
+    <link rel="preload" href="/images/imagen-principal.jpg" as="image" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -53,17 +58,23 @@
         <div class="row places_section__slide">
           <div class="col">
             <img
-              src="/images/pexels-eberhard-grossgasteiger-572897.jpg"
+              src="/images/pexels-josh-hild-2422259.jpg"
               alt="image 1"
+              loading="lazy"
             />
           </div>
           <div class="col">
-            <img src="/images/pexels-luis-del-río-15286.jpg" alt="image 2" />
+            <img
+              src="/images/pexels-luis-del-río-15286.jpg"
+              alt="image 2"
+              loading="lazy"
+            />
           </div>
           <div class="col">
             <img
               src="/images/pexels-stein-egil-liland-3408744.jpg"
               alt="image 3"
+              loading="lazy"
             />
           </div>
         </div>
@@ -89,5 +100,7 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
+    <script src="performance.js" defer></script>
   </body>
 </html>
